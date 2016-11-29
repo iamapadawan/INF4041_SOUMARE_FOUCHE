@@ -8,9 +8,6 @@ import java.util.List;
 import org.seedstack.business.assembler.MatchingEntityId;
 import org.seedstack.business.assembler.MatchingFactoryParameter;
 
-/***
- * @author adrien.lauer@mpsa.com Customer
- */
 public class ProjectDTO {
 
     private String name;

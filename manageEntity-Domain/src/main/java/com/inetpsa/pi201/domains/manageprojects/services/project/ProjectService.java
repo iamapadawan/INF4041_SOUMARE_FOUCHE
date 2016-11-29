@@ -5,11 +5,6 @@ import java.text.ParseException;
 
 import org.seedstack.business.Service;
 
-/**
- * @author THIPHAINE PEREZ ZANCA
- * @version 1.0
- * @created 18-mai-2016 10:06:27
- */
 @Service
 public interface ProjectService {
 

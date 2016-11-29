@@ -1,6 +1,4 @@
-/*
- * Creation : 27 avr. 2016
- */
+
 package com.inetpsa.pi201.manageprojects.model.manageprojectsbudgetsresources.project;
 
 import java.text.ParseException;
@@ -189,7 +187,7 @@ public class ProjectFactoryDefaultIT extends AbstractSeedIT {
     private void scenarioAddResponsibleToProject() {
 
         // create a user
-        String l_login = "u485560";
+        String l_login = "UserId1";
         String l_name = "Soumare";
         String l_firstName = "Ahmed";
 
@@ -209,7 +207,7 @@ public class ProjectFactoryDefaultIT extends AbstractSeedIT {
     private void scenarioAddResponsibleToEmptyProject() {
 
         // create a user
-        String l_login = "u485560";
+        String l_login = "UserId2";
         String l_name = "Soumare";
         String l_firstName = "Ahmed";
 
@@ -228,7 +226,7 @@ public class ProjectFactoryDefaultIT extends AbstractSeedIT {
     private void scenarioAddResponsibleToNullProject() {
 
         // create a user
-        String l_login = "u485560";
+        String l_login = "UserId1";
         String l_name = "Soumare";
         String l_firstName = "Ahmed";
 
@@ -244,7 +242,7 @@ public class ProjectFactoryDefaultIT extends AbstractSeedIT {
     private void scenarioAddResponsibleToDeliverable() {
 
         // create a user
-        String l_login = "u485560";
+        String l_login = "UserId2";
         String l_name = "SOUMARE";
         String l_firstName = "Ahmed";
 
@@ -252,7 +250,7 @@ public class ProjectFactoryDefaultIT extends AbstractSeedIT {
         Assertions.assertThat(l_User).isNotNull();
 
         // create a project
-        String l_nameProject = "Doti";
+        String l_nameProject = "WEB Project";
         Project l_Project = m_ProjectFactory.createProject(l_nameProject);
 
         // create an empty deliverable
@@ -301,7 +299,7 @@ public class ProjectFactoryDefaultIT extends AbstractSeedIT {
     private void scenarioAddResponsibleToEmptyDeliverable() {
 
         // create a user
-        String l_login = "U485560";
+        String l_login = "UserId3";
         String l_nameUser = "SOUMARE";
         String l_firstNameUser = "Ahmed";
 
@@ -318,7 +316,7 @@ public class ProjectFactoryDefaultIT extends AbstractSeedIT {
         String lComment = "comment6";
 
         String lNameDeliverabe = "";
-        String lProjectName = "Doti";
+        String lProjectName = "Android Project";
 
         // create a project
         Project lProject = m_ProjectFactory.createProject(lProjectName);

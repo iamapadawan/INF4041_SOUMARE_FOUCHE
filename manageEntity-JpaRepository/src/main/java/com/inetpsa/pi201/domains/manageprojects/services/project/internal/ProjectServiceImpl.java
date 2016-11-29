@@ -92,7 +92,7 @@ public class ProjectServiceImpl implements ProjectService {
                 }
                 // persist the list of projects in database
                 mProjectRepository.persistList(lListProject);
-                ;
+
             }
 
         } catch (FileNotFoundException e) {
@@ -112,7 +112,6 @@ public class ProjectServiceImpl implements ProjectService {
         }
 
         System.out.println("Done: ImportProjectsFromCsvFile");
-
     }
 
     @Transactional
@@ -153,15 +152,15 @@ public class ProjectServiceImpl implements ProjectService {
                 // Add the deliverable dateNewEnd which is located in column [5]
                 Date l_dateNewEnd = formatter.parse(lProjectImport[5]);
                 // Add the deliverable comment which is located in column [6]
-                if (lProjectImport[6] != null) {
-                    lComment = lProjectImport[6];
-                } else {
-                    lComment = "";
-                }
+                // if (lProjectImport[6] != null && !lProjectImport[6].isEmpty()) {
+                // lComment = lProjectImport[6];
+                // } else {
+                // lComment = "";
+                // }
 
                 System.out.println("\n Project Deliverables [Name= " + lProjectImport[0] + " , Name= " + lProjectImport[1] + " , dateStart= "
                         + lProjectImport[2] + " dateEnd= " + lProjectImport[3] + " dateNewStart= " + lProjectImport[4] + " dateNewEnd= "
-                        + lProjectImport[4] + " comment= " + lProjectImport[6] + "]");
+                        + lProjectImport[5] + "]");
 
                 // check if the project already exist
                 checkTest: while (scanner.hasNextLine()) {

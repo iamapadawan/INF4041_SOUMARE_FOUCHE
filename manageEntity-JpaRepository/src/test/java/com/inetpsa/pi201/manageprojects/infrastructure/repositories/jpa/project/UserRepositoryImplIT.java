@@ -50,9 +50,9 @@ public class UserRepositoryImplIT extends AbstractSeedIT {
     private void scenarioOnePersistOneUSer() {
 
         // The data base is normally empty ( create mode..)
-        String l_login = "c038964";
-        String l_name = "DUPUY";
-        String l_firstName = "Frank";
+        String l_login = "17485560";
+        String l_name = "SOUMARE";
+        String l_firstName = "Ahmed Salem";
 
         // try to load not created user id in the persist list
         Assertions.assertThat(m_UserRepository.load(l_login)).isNull();
@@ -68,7 +68,7 @@ public class UserRepositoryImplIT extends AbstractSeedIT {
         Assertions.assertThat(m_UserRepository.load(l_login)).isNotNull();
 
         // try to persist the loaded user from data base : Normally no error
-        String l_newFirstName = "Frank Frederic Christophe";
+        String l_newFirstName = "Ahmed";
         l_User_1.setfirstName(l_newFirstName);
         m_UserRepository.persist(l_User_1);
 
@@ -101,19 +101,19 @@ public class UserRepositoryImplIT extends AbstractSeedIT {
         ArrayList<User> l_listOfUsers = new ArrayList<User>();
 
         // user 1
-        String l_login_1 = "U334455";
+        String l_login_1 = "13484302";
         String l_name_1 = "NAVARRO";
         String l_firstName_1 = "Eric";
 
         // user 2
-        String l_login_2 = "U667788";
-        String l_name_2 = "PEREZ";
-        String l_firstName_2 = "Tiphaine";
+        String l_login_2 = "17485560";
+        String l_name_2 = "SOUMARE";
+        String l_firstName_2 = "Ahmed Salem";
 
         // user 3
-        String l_login_3 = "U991100";
-        String l_name_3 = "LOURENCO";
-        String l_firstName_3 = "Andrea";
+        String l_login_3 = "1211256";
+        String l_name_3 = "FOUCHE";
+        String l_firstName_3 = "Theo";
 
         // create a new users
         User l_User_1 = m_UserFactory.createUser(l_login_1, l_name_1, l_firstName_1);
@@ -168,7 +168,7 @@ public class UserRepositoryImplIT extends AbstractSeedIT {
 
     private void scenarioSaveUserInDataBase() {
 
-        String l_login = "u485560";
+        String l_login = "17485560";
         String l_name = "SOUMARE";
         String l_firstame = "Ahmed";
         User l_User_1 = m_UserFactory.createUser(l_login, l_name, l_firstame);

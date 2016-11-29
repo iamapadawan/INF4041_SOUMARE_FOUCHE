@@ -107,7 +107,7 @@ public class ProjectRepositoryImplIT extends AbstractSeedIT {
     private void scenarioOnePersistOneProject() {
 
         // The data base is normally empty ( create mode..)
-        String l_ProjectName = "Antidote";
+        String l_ProjectName = "Projet web";
 
         // try to load a user in empty data base
         Assertions.assertThat(m_ProjectRepository.load(l_ProjectName)).isNull();
@@ -141,15 +141,15 @@ public class ProjectRepositoryImplIT extends AbstractSeedIT {
         // create an empty list of project
         List<Project> l_listOfproject = new ArrayList<Project>();
 
-        String l_Project_1_name = "OrusDiag";
+        String l_Project_1_name = "Projet Android";
         Project l_Project_1 = m_ProjectFactory.createProject(l_Project_1_name);
         Assertions.assertThat(l_Project_1).isNotNull();
 
-        String l_Project_2_name = "Antidote";
+        String l_Project_2_name = "Projet ";
         Project l_Project_2 = m_ProjectFactory.createProject(l_Project_2_name);
         Assertions.assertThat(l_Project_2).isNotNull();
 
-        String l_Project_3_name = "Manage Entity";
+        String l_Project_3_name = "Manage Entity  by Ahmed&Théo";
         Project l_Project_3 = m_ProjectFactory.createProject(l_Project_3_name);
         Assertions.assertThat(l_Project_3).isNotNull();
 
@@ -249,9 +249,9 @@ public class ProjectRepositoryImplIT extends AbstractSeedIT {
                 l_dateNewStart2, l_dateNewEnd2, lComment2);
 
         // create manager of the project
-        String l_loginProject = "U484014";
-        String l_firstNameProject = "Thiphaine";
-        String l_nameProject = "PEREZ ZANCA";
+        String l_loginProject = "17485560";
+        String l_firstNameProject = "Ahmed Salem";
+        String l_nameProject = "Soumare";
 
         User l_UserProject = m_UserFactory.createUser(l_loginProject, l_nameProject, l_firstNameProject);
         m_UserRepository.persist(l_UserProject);
@@ -260,9 +260,9 @@ public class ProjectRepositoryImplIT extends AbstractSeedIT {
         m_ProjectFactory.addResponsibleToProject(l_loginProject, l_Project2);
 
         // create manager of the first deliverable
-        String l_loginDeliverable = "U494098";
-        String l_firstNameDeliverable = "Andréa";
-        String l_nameDeliverable = "LOURENCO";
+        String l_loginDeliverable = "1211256";
+        String l_firstNameDeliverable = "Théo";
+        String l_nameDeliverable = "FOUCHE";
 
         User l_UserDeliverable = m_UserFactory.createUser(l_loginDeliverable, l_nameDeliverable, l_firstNameDeliverable);
         m_UserRepository.persist(l_UserDeliverable);
@@ -270,7 +270,7 @@ public class ProjectRepositoryImplIT extends AbstractSeedIT {
         m_ProjectFactory.addResponsibleToDeliverable(l_loginDeliverable, l_firstDeliverable);
 
         // create manager of the second deliverable
-        String l_loginDeliverable2 = "U484302";
+        String l_loginDeliverable2 = "13484302";
         String l_firstNameDeliverable2 = "Eric";
         String l_nameDeliverable2 = "NAVARRO";
 

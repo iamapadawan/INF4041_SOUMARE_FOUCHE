@@ -29,15 +29,6 @@ public class DeliverableDTO {
         this.comment = comment;
     }
 
-    // public DeliverableDTO(String name, Date dateStart, Date dateEnd, Date dateNewStart, Date dateNewEnd, String responsable) {
-    // this.name = name;
-    // this.dateStart = dateStart;
-    // this.dateEnd = dateEnd;
-    // this.dateNewStart = dateNewStart;
-    // this.dateNewEnd = dateNewEnd;
-    // this.responsable = responsable;
-    // }
-
     public String getName() {
         return name;
     }
@@ -93,13 +84,5 @@ public class DeliverableDTO {
     public void setcomment(String comment) {
         this.comment = comment;
     }
-
-    // public Project getParentProject() {
-    // return parentProject;
-    // }
-    //
-    // public void setParentProject(Project parentProject) {
-    // this.parentProject = parentProject;
-    // }
 
 }

@@ -23,9 +23,6 @@ import org.slf4j.LoggerFactory;
 import com.inetpsa.pi201.domains.manageprojects.model.manageprojectsbudgetsresources.user.User;
 import com.inetpsa.pi201.domains.manageprojects.model.manageprojectsbudgetsresources.user.UserRepository;
 
-/**
- * @author adrien.lauer@mpsa.com Customer
- */
 @DataSet(group = "manage-domain", name = "users")
 public class UserDataImporter implements DataImporter<UserDTO> {
     private static final Logger LOGGER = LoggerFactory.getLogger(UserDataImporter.class);
